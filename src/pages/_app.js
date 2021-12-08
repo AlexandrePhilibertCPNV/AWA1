@@ -1,11 +1,11 @@
 import React from "react";
-import App from "next/app";
+import NextApp from "next/app";
 import Head from "next/head";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "styles/tailwind.css";
+import "src/styles/tailwind.css";
 
-export default class MyApp extends App {
+export default class App extends NextApp {
   componentDidMount() {
     let comment = document.createComment(`
 
