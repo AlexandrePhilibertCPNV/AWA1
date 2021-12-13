@@ -93,7 +93,13 @@ const SecondSection = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center">
           <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
-            <div className="relative flex flex-col min-w-0 break-wordsw-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+            <motion.div
+              variants={item}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="relative flex flex-col min-w-0 break-wordsw-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+            >
               <img
                 alt="..."
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
@@ -120,7 +126,7 @@ const SecondSection = () => {
                   to login areas, you can easily customise and built your pages.
                 </p>
               </blockquote>
-            </div>
+            </motion.div>
           </div>
 
           <div className="w-full md:w-6/12 px-4">
