@@ -16,7 +16,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="TRAFFIC"
-                  statTitle="350,897"
+                  value={350_897}
                   statArrow="up"
                   statPercent="3.48"
                   statPercentColor="text-emerald-500"
@@ -28,7 +28,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="NEW USERS"
-                  statTitle="2,356"
+                  value={2_356}
                   statArrow="down"
                   statPercent="3.48"
                   statPercentColor="text-red-500"
@@ -40,7 +40,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="SALES"
-                  statTitle="924"
+                  value={924}
                   statArrow="down"
                   statPercent="1.10"
                   statPercentColor="text-orange-500"
@@ -52,7 +52,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="PERFORMANCE"
-                  statTitle="49,65%"
+                  value={49.65}
                   statArrow="up"
                   statPercent="12"
                   statPercentColor="text-emerald-500"
