@@ -24,7 +24,7 @@ declare module "next" {
 }
 
 declare module "next/app" {
-  type AppLayoutProps<P = {}> = AppProps & {
+  type AppLayoutProps = AppProps & {
     Component: NextLayoutComponentType;
   };
 }
