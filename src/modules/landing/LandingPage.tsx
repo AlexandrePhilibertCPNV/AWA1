@@ -59,6 +59,36 @@ const FirstSection = () => {
 };
 
 const SecondSection = () => {
+  const leftSwipe = {
+    hidden: {
+      left: "100%",
+      transition: {
+        duration: 0.75,
+      },
+    },
+    visible: {
+      left: 0,
+      transition: {
+        duration: 0.75,
+      },
+    },
+  };
+
+  const rightSwipe = {
+    hidden: {
+      right: "100%",
+      transition: {
+        duration: 0.75,
+      },
+    },
+    visible: {
+      right: 0,
+      transition: {
+        duration: 0.75,
+      },
+    },
+  };
+
   const item = {
     hidden: {
       opacity: 0,
@@ -74,7 +104,7 @@ const SecondSection = () => {
   };
 
   return (
-    <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
+    <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100 overflow-x-hidden">
       <div
         className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
         style={{ transform: "translateZ(0)" }}
@@ -214,8 +244,14 @@ const SecondSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto overflow-hidden pb-20">
-        <div className="flex flex-wrap items-center">
+      <div className="container mx-auto overflow pb-20">
+        <motion.div
+          variants={leftSwipe}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="relative flex flex-wrap items-center"
+        >
           <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
             <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
               <i className="fas fa-sitemap text-xl"></i>
@@ -282,9 +318,15 @@ const SecondSection = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap items-center pt-32">
+        <motion.div
+          variants={rightSwipe}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="relative flex flex-wrap items-center pt-32"
+        >
           <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
             <div className="justify-center flex flex-wrap relative">
               <div className="my-4 w-full lg:w-6/12 px-4">
@@ -435,11 +477,17 @@ const SecondSection = () => {
               <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="container mx-auto px-4 pb-32 pt-48">
-        <div className="items-center flex flex-wrap">
+        <motion.div
+          variants={leftSwipe}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="relative items-center flex flex-wrap"
+        >
           <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
             <div className="md:pr-12">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
@@ -510,7 +558,7 @@ const SecondSection = () => {
               src="/img/documentation.png"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="justify-center text-center flex flex-wrap mt-24">
