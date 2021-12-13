@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 import IndexNavbar from "src/components/Navbars/IndexNavbar";
 import Footer from "src/components/Footers/Footer";
 import { Chip } from "src/ui/Chip";
+import { useRefScrollProgress } from "src/hooks/useRefScrollProgress";
 
 const FirstSection = () => {
   return (
@@ -59,6 +60,15 @@ const FirstSection = () => {
 };
 
 const SecondSection = () => {
+  const divScrollRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useViewportScroll();
+  const { start, end } = useRefScrollProgress(divScrollRef);
+  const scale = useTransform(
+    scrollYProgress,
+    [start - 0.2, end - 0.05],
+    [0.5, 1.15]
+  );
+
   const leftSwipe = {
     hidden: {
       left: "100%",
@@ -104,7 +114,7 @@ const SecondSection = () => {
   };
 
   return (
-    <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100 overflow-x-hidden">
+    <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
       <div
         className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
         style={{ transform: "translateZ(0)" }}
@@ -132,7 +142,7 @@ const SecondSection = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="relative flex flex-col min-w-0 break-wordsw-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+              className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
             >
               <img
                 alt="..."
@@ -283,35 +293,55 @@ const SecondSection = () => {
               <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
             </a>
           </div>
-
           <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
-            <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
-              <img
+            <div
+              ref={divScrollRef}
+              className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0"
+            >
+              <motion.img
+                style={{
+                  scale,
+                }}
                 alt="..."
                 src="/img/component-btn.png"
                 className="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
               />
-              <img
+              <motion.img
+                style={{
+                  scale,
+                }}
                 alt="..."
                 src="/img/component-profile-card.png"
                 className="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
               />
-              <img
+              <motion.img
+                style={{
+                  scale,
+                }}
                 alt="..."
                 src="/img/component-info-card.png"
                 className="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
               />
-              <img
+              <motion.img
+                style={{
+                  scale,
+                }}
                 alt="..."
                 src="/img/component-info-2.png"
                 className="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
               />
-              <img
+              <motion.img
+                style={{
+                  scale,
+                }}
                 alt="..."
                 src="/img/component-menu.png"
                 className="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
               />
-              <img
+              <motion.img
+                style={{
+                  scale,
+                }}
                 alt="..."
                 src="/img/component-btn-pink.png"
                 className="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
