@@ -11880,10 +11880,22 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
+svg-pan-zoom@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/svg-pan-zoom/-/svg-pan-zoom-3.6.1.tgz#f880a1bb32d18e9c625d7715350bebc269b450cf"
+  integrity sha512-JaKkGHHfGvRrcMPdJWkssLBeWqM+Isg/a09H7kgNNajT1cX5AztDTNs+C8UzpCxjCTRrG34WbquwaovZbmSk9g==
+
 svg-parser@^2.0.2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
   integrity sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==
+
+svgmap@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/svgmap/-/svgmap-2.7.1.tgz#9f52fd31aa457044bb3d4596aa4cb65a4cb7a6c6"
+  integrity sha512-wyhG+gwlU9+CgCC5e2XetM760qwKoS0Nzv5i5shZDb0LXiv5vDEjcGNmDgwiExUWYYDMojbNbQsPO5uLDjE2Nw==
+  dependencies:
+    svg-pan-zoom "^3.6.1"
 
 svgo@^1.0.0, svgo@^1.2.2:
   version "1.3.2"
