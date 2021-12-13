@@ -3,9 +3,13 @@ import PropTypes from "prop-types";
 
 // components
 
-import TableDropdown from "src/components/Dropdowns/TableDropdown.js";
+import TableDropdown from "src/components/Dropdowns/TableDropdown";
 
-export default function CardTable({ color }) {
+type CardTableProps = {
+  color: "light" | "dark";
+};
+
+export default function CardTable({ color }: CardTableProps) {
   return (
     <>
       <div

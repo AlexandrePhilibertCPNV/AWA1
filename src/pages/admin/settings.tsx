@@ -2,12 +2,12 @@ import React from "react";
 
 // components
 
-import CardSettings from "src/components/Cards/CardSettings.js";
-import CardProfile from "src/components/Cards/CardProfile.js";
+import CardSettings from "src/components/Cards/CardSettings";
+import CardProfile from "src/components/Cards/CardProfile";
 
 // layout for page
 
-import Admin from "src/layouts/Admin.js";
+import Admin from "src/layouts/Admin";
 
 export default function Settings() {
   return (

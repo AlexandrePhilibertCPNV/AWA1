@@ -2,11 +2,11 @@ import React from "react";
 
 // components
 
-import MapExample from "src/components/Maps/MapExample.js";
+import MapExample from "src/components/Maps/MapExample";
 
 // layout for page
 
-import Admin from "src/layouts/Admin.js";
+import Admin from "src/layouts/Admin";
 
 export default function Maps() {
   return (

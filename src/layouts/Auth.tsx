@@ -1,14 +1,14 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 
 // components
 
-import Navbar from "src/components/Navbars/AuthNavbar.js";
-import FooterSmall from "src/components/Footers/FooterSmall.js";
+import Navbar from "src/components/Navbars/AuthNavbar";
+import FooterSmall from "src/components/Footers/FooterSmall";
 
-export default function Auth({ children }) {
+export default function Auth({ children }: PropsWithChildren<{}>) {
   return (
     <>
-      <Navbar transparent />
+      <Navbar />
       <main>
         <section className="relative w-full h-full py-40 min-h-screen">
           <div

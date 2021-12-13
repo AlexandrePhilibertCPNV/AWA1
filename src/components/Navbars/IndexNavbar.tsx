@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 // components
 
-import IndexDropdown from "src/components/Dropdowns/IndexDropdown.js";
+import IndexDropdown from "src/components/Dropdowns/IndexDropdown";
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>

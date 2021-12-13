@@ -2,13 +2,13 @@
 import React from "react";
 import Link from "next/link";
 
-import IndexNavbar from "src/components/Navbars/IndexNavbar.js";
-import Footer from "src/components/Footers/Footer.js";
+import IndexNavbar from "src/components/Navbars/IndexNavbar";
+import Footer from "src/components/Footers/Footer";
 
 export default function Index() {
   return (
     <>
-      <IndexNavbar fixed />
+      <IndexNavbar />
       <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">

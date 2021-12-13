@@ -2,11 +2,11 @@ import React from "react";
 
 // components
 
-import CardTable from "src/components/Cards/CardTable.js";
+import CardTable from "src/components/Cards/CardTable";
 
 // layout for page
 
-import Admin from "src/layouts/Admin.js";
+import Admin from "src/layouts/Admin";
 
 export default function Tables() {
   return (
