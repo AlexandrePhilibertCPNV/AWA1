@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import IndexNavbar from "src/components/Navbars/IndexNavbar";
 import Footer from "src/components/Footers/Footer";
+import { Chip } from "src/ui/Chip";
 
 const FirstSection = () => {
   return (
@@ -225,30 +226,14 @@ const SecondSection = () => {
               have different colours.
             </p>
             <div className="block pb-6">
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Buttons
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Inputs
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Labels
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Menus
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Navbars
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Pagination
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Progressbars
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Typography
-              </span>
+              <Chip>Buttons</Chip>
+              <Chip>Inputs</Chip>
+              <Chip>Labels</Chip>
+              <Chip>Menus</Chip>
+              <Chip>Navbars</Chip>
+              <Chip>Pagination</Chip>
+              <Chip>Progressbars</Chip>
+              <Chip>Typography</Chip>
             </div>
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
