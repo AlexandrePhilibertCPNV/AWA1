@@ -67,6 +67,9 @@ const SecondSection = () => {
     visible: {
       opacity: 1,
       top: 0,
+      transition: {
+        duration: 0.75,
+      },
     },
   };
 
@@ -247,13 +250,7 @@ const SecondSection = () => {
 
           <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
             <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
-              <motion.img
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  hidden: { opacity: 0 },
-                  visible: { opacity: 1 },
-                }}
+              <img
                 alt="..."
                 src="/img/component-btn.png"
                 className="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
@@ -531,13 +528,42 @@ const SecondSection = () => {
 };
 
 const ThirdSection = () => {
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.25,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      top: 100,
+    },
+    visible: {
+      opacity: 1,
+      top: 0,
+    },
+  };
+
   return (
     <section className="block relative z-1 bg-blueGray-600">
       <div className="container mx-auto">
         <div className="justify-center flex flex-wrap">
           <div className="w-full lg:w-12/12 px-4  -mt-24">
-            <div className="flex flex-wrap">
-              <div className="w-full lg:w-4/12 px-4">
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="flex flex-wrap"
+            >
+              <motion.div
+                variants={item}
+                className="relative w-full lg:w-4/12 px-4"
+              >
                 <h5 className="text-xl font-semibold pb-4 text-center">
                   Login Page
                 </h5>
@@ -550,9 +576,11 @@ const ThirdSection = () => {
                     />
                   </div>
                 </Link>
-              </div>
-
-              <div className="w-full lg:w-4/12 px-4">
+              </motion.div>
+              <motion.div
+                variants={item}
+                className="relative w-full lg:w-4/12 px-4"
+              >
                 <h5 className="text-xl font-semibold pb-4 text-center">
                   Profile Page
                 </h5>
@@ -565,9 +593,11 @@ const ThirdSection = () => {
                     />
                   </div>
                 </Link>
-              </div>
-
-              <div className="w-full lg:w-4/12 px-4">
+              </motion.div>
+              <motion.div
+                variants={item}
+                className="relative w-full lg:w-4/12 px-4"
+              >
                 <h5 className="text-xl font-semibold pb-4 text-center">
                   Landing Page
                 </h5>
@@ -580,8 +610,8 @@ const ThirdSection = () => {
                     />
                   </div>
                 </Link>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>
