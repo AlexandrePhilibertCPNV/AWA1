@@ -1742,6 +1742,11 @@
     ejs "^2.6.1"
     magic-string "^0.25.0"
 
+"@svg-maps/world@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@svg-maps/world/-/world-1.0.1.tgz#12d9cc263a1e3c25778c768687368fb6165a42d9"
+  integrity sha512-Mawh/jEYBBHnug9S17PyePLYKJ+Xd0Bbh96mCePebpbvcbJu5YKpfKhpyMeLFmmdWPrSFxl0f0MTsJfXU0gSaQ==
+
 "@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-5.4.0.tgz#81ef61947bb268eb9d50523446f9c638fb355906"
@@ -1999,7 +2004,14 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
   integrity sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==
 
-"@types/react@^17.0.37":
+"@types/react-svg-map@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@types/react-svg-map/-/react-svg-map-2.1.2.tgz#1dc41d49bf14d75473a51e7ce2875e27106b4331"
+  integrity sha512-Mm8udymAR45B96EJJJRucSN0WZS/2bDsacrnJX3zOziDvuN7hkqM5jo564psUVdVLv3xHU47VXvPs94EJwBZEg==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^17.0.37":
   version "17.0.37"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.37.tgz#6884d0aa402605935c397ae689deed115caad959"
   integrity sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==

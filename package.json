@@ -8,6 +8,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
     "@popperjs/core": "2.9.1",
+    "@svg-maps/world": "^1.0.1",
     "@tailwindcss/forms": "0.2.1",
     "chart.js": "2.9.4",
     "framer-motion": "^5.4.5",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@types/chart.js": "^2.9.34",
     "@types/react": "^17.0.37",
+    "@types/react-svg-map": "^2.1.2",
     "autoprefixer": "10.2.5",
     "postcss": "8.2.8"
   }
