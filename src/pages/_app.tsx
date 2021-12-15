@@ -4,7 +4,7 @@ import { AppContext, AppInitialProps, AppLayoutProps } from "next/app";
 import Head from "next/head";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "src/styles/tailwind.css";
+import "src/styles/index.css";
 
 const App: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
   Component,
