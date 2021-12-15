@@ -1,4 +1,4 @@
-import World from "src/assets/world";
+import USA from "src/assets/usa";
 import { SVGMap } from "react-svg-map";
 
 import "react-svg-map/lib/index.css";
@@ -9,7 +9,7 @@ import "react-svg-map/lib/index.css";
 export const Map = () => {
   return (
     <SVGMap
-      map={World}
+      map={USA}
       locationClassName="fill-current text-blue-300 outline-none hover:text-blue-400 cursor-pointer"
     />
   );
