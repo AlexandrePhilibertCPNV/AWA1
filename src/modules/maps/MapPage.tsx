@@ -3,6 +3,7 @@ import React from "react";
 import { Map } from "./Map";
 
 import Admin from "src/layouts/Admin";
+import { SalesDonutChart } from "./SalesDonutChart";
 
 const MapPage = () => (
   <>
@@ -14,7 +15,8 @@ const MapPage = () => (
         <div className="relative flex flex-col flex-1 min-w-min flex-shrink-0 break-words bg-white mb-6 shadow-lg rounded p-6">
           <h1 className="text-xl font-semibold">Satistiques</h1>
           <hr className="border border-gray-200 my-4" />
-          <h2></h2>
+          <h2>Objectifs de vente</h2>
+          <SalesDonutChart />
         </div>
       </div>
     </div>
