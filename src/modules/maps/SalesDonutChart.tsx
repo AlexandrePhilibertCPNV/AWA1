@@ -1,27 +1,18 @@
-import { useEffect, useRef } from "react";
-import { Chart, ChartConfiguration, ChartTooltipItem } from "chart.js";
+import { Chart, ChartConfiguration } from "chart.js";
+import { useEffect } from "react";
 
-export const SalesDonutChart = () => {
-  const ref = useRef<HTMLCanvasElement>(null);
+type SalesDonutChartProps = {
+  datasets: any;
+  labels: any;
+};
 
+export const SalesDonutChart = ({ labels, datasets }: SalesDonutChartProps) => {
   useEffect(() => {
-    if (!ref.current) {
-      return;
-    }
-
-    let config: ChartConfiguration = {
+    const config: ChartConfiguration = {
       type: "doughnut",
       data: {
-        labels: ["Effectué", "Restant"],
-        datasets: [
-          {
-            backgroundColor: ["#ed64a6", "#eee"],
-            borderColor: ["#ed64a6", "#eee"],
-            data: [76, 24],
-            fill: false,
-            barThickness: 8,
-          },
-        ],
+        labels,
+        datasets,
       },
       options: {
         responsive: true,
@@ -31,7 +22,7 @@ export const SalesDonutChart = () => {
         },
         tooltips: {
           callbacks: {
-            label: function (tooltipItem: ChartTooltipItem, data: any) {
+            label: function (tooltipItem: any, data: any) {
               const datasetIndex = tooltipItem.datasetIndex!;
               const index = tooltipItem.index!;
 
@@ -80,9 +71,11 @@ export const SalesDonutChart = () => {
         },
       },
     };
+    new Chart(
+      document.getElementById("sales-donut-chart") as HTMLCanvasElement,
+      config
+    );
+  }, [datasets, labels]);
 
-    new Chart(ref.current.getContext("2d")!, config);
-  }, []);
-
-  return <canvas ref={ref} width="400" height="400"></canvas>;
+  return <canvas id="sales-donut-chart" />;
 };

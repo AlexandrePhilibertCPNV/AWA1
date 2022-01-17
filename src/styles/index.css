@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+path[aria-checked="true"] {
+  background-color: #f5f5f5;
+}
