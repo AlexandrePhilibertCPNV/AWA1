@@ -10,11 +10,11 @@ import { useRefScrollProgress } from "src/hooks/useRefScrollProgress";
 
 const FirstSection = () => {
   return (
-    <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
-      <div className="container mx-auto items-center flex flex-wrap">
-        <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+    <section className="relative flex items-center h-screen pt-16 header max-h-860-px">
+      <div className="container flex flex-wrap items-center mx-auto">
+        <div className="w-full px-4 md:w-8/12 lg:w-6/12 xl:w-6/12">
           <div className="pt-32 sm:pt-0">
-            <h2 className="font-semibold text-4xl text-blueGray-600">
+            <h2 className="text-4xl font-semibold text-blueGray-600">
               Notus NextJS - A beautiful extension for Tailwind CSS.
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
@@ -35,13 +35,13 @@ const FirstSection = () => {
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index"
                 target="_blank"
-                className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                className="px-6 py-4 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none get-started focus:outline-none bg-blueGray-400 active:bg-blueGray-500 hover:shadow-lg"
               >
                 Get started
               </a>
               <a
                 href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
-                className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
+                className="px-6 py-4 mb-1 ml-1 mr-1 text-sm font-bold text-white uppercase rounded shadow outline-none github-star focus:outline-none bg-blueGray-700 active:bg-blueGray-600 hover:shadow-lg"
                 target="_blank"
               >
                 Github Star
@@ -51,7 +51,7 @@ const FirstSection = () => {
         </div>
       </div>
       <img
-        className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
+        className="absolute top-0 right-0 w-10/12 pt-16 -mt-48 b-auto sm:w-6/12 sm:mt-0 max-h-860-px"
         src="/img/pattern_nextjs.png"
         alt="..."
       />
@@ -114,9 +114,9 @@ const SecondSection = () => {
   };
 
   return (
-    <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
+    <section className="relative pb-40 mt-48 md:mt-40 bg-blueGray-100">
       <div
-        className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
+        className="absolute top-0 left-0 right-0 bottom-auto w-full h-20 -mt-20"
         style={{ transform: "translateZ(0)" }}
       >
         <svg
@@ -129,20 +129,20 @@ const SecondSection = () => {
           y="0"
         >
           <polygon
-            className="text-blueGray-100 fill-current"
+            className="fill-current text-blueGray-100"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
       </div>
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center">
-          <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
+          <div className="w-10/12 px-12 ml-auto mr-auto -mt-32 md:w-6/12 lg:w-4/12 md:px-4">
             <motion.div
               variants={item}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+              className="relative flex flex-col w-full min-w-0 mb-6 break-words rounded-lg shadow-lg bg-blueGray-700"
             >
               <img
                 alt="..."
@@ -154,17 +154,17 @@ const SecondSection = () => {
                   preserveAspectRatio="none"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 583 95"
-                  className="absolute left-0 w-full block h-95-px -top-94-px"
+                  className="absolute left-0 block w-full h-95-px -top-94-px"
                 >
                   <polygon
                     points="-30,95 583,95 583,65"
-                    className="text-blueGray-700 fill-current"
+                    className="fill-current text-blueGray-700"
                   ></polygon>
                 </svg>
                 <h4 className="text-xl font-bold text-white">
                   Great for your awesome project
                 </h4>
-                <p className="text-md font-light mt-2 text-white">
+                <p className="mt-2 font-light text-white text-md">
                   Putting together a page has never been easier than matching
                   together pre-made components. From landing pages presentation
                   to login areas, you can easily customise and built your pages.
@@ -173,7 +173,7 @@ const SecondSection = () => {
             </motion.div>
           </div>
 
-          <div className="w-full md:w-6/12 px-4">
+          <div className="w-full px-4 md:w-6/12">
             <div className="flex flex-wrap">
               <motion.div
                 variants={item}
@@ -182,11 +182,11 @@ const SecondSection = () => {
                 viewport={{ once: true }}
                 className="relative flex flex-col w-1/2"
               >
-                <div className="px-4 py-5 flex-auto">
-                  <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <div className="flex-auto px-4 py-5">
+                  <div className="inline-flex items-center justify-center w-12 h-12 p-3 mb-5 text-center bg-white rounded-full shadow-lg text-blueGray-500">
                     <i className="fas fa-sitemap"></i>
                   </div>
-                  <h6 className="text-xl mb-1 font-semibold">CSS Components</h6>
+                  <h6 className="mb-1 text-xl font-semibold">CSS Components</h6>
                   <p className="mb-4 text-blueGray-500">
                     Notus NextJS comes with a huge number of Fully Coded CSS
                     components.
@@ -200,11 +200,11 @@ const SecondSection = () => {
                 viewport={{ once: true }}
                 className="relative flex flex-col w-1/2"
               >
-                <div className="px-4 py-5 flex-auto">
-                  <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <div className="flex-auto px-4 py-5">
+                  <div className="inline-flex items-center justify-center w-12 h-12 p-3 mb-5 text-center bg-white rounded-full shadow-lg text-blueGray-500">
                     <i className="fas fa-drafting-compass"></i>
                   </div>
-                  <h6 className="text-xl mb-1 font-semibold">
+                  <h6 className="mb-1 text-xl font-semibold">
                     JavaScript Components
                   </h6>
                   <p className="mb-4 text-blueGray-500">
@@ -220,11 +220,11 @@ const SecondSection = () => {
                 viewport={{ once: true }}
                 className="relative flex flex-col w-1/2"
               >
-                <div className="px-4 py-5 flex-auto">
-                  <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <div className="flex-auto px-4 py-5">
+                  <div className="inline-flex items-center justify-center w-12 h-12 p-3 mb-5 text-center bg-white rounded-full shadow-lg text-blueGray-500">
                     <i className="fas fa-newspaper"></i>
                   </div>
-                  <h6 className="text-xl mb-1 font-semibold">Pages</h6>
+                  <h6 className="mb-1 text-xl font-semibold">Pages</h6>
                   <p className="mb-4 text-blueGray-500">
                     This extension also comes with 3 sample pages. They are
                     fully coded so you can start working instantly.
@@ -238,11 +238,11 @@ const SecondSection = () => {
                 viewport={{ once: true }}
                 className="relative flex flex-col w-1/2"
               >
-                <div className="px-4 py-5 flex-auto">
-                  <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <div className="flex-auto px-4 py-5">
+                  <div className="inline-flex items-center justify-center w-12 h-12 p-3 mb-5 text-center bg-white rounded-full shadow-lg text-blueGray-500">
                     <i className="fas fa-file-alt"></i>
                   </div>
-                  <h6 className="text-xl mb-1 font-semibold">Documentation</h6>
+                  <h6 className="mb-1 text-xl font-semibold">Documentation</h6>
                   <p className="mb-4 text-blueGray-500">
                     Built by developers for developers. You will love how easy
                     is to to work with Notus NextJS.
@@ -254,7 +254,7 @@ const SecondSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto overflow pb-20">
+      <div className="container pb-20 mx-auto overflow">
         <motion.div
           variants={leftSwipe}
           initial="hidden"
@@ -262,14 +262,14 @@ const SecondSection = () => {
           viewport={{ once: true }}
           className="relative flex flex-wrap items-center"
         >
-          <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
-            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-              <i className="fas fa-sitemap text-xl"></i>
+          <div className="w-full px-12 mt-48 ml-auto mr-auto md:w-4/12 md:px-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center bg-white rounded-full shadow-lg text-blueGray-500">
+              <i className="text-xl fas fa-sitemap"></i>
             </div>
-            <h3 className="text-3xl mb-2 font-semibold leading-normal">
+            <h3 className="mb-2 text-3xl font-semibold leading-normal">
               CSS Components
             </h3>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+            <p className="mt-4 mb-4 text-lg font-light leading-relaxed text-blueGray-600">
               Every element that you need in a product comes built in as a
               component. All components fit perfectly with each other and can
               have different colours.
@@ -287,16 +287,16 @@ const SecondSection = () => {
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
               target="_blank"
-              className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
+              className="font-bold transition-all duration-150 ease-linear text-blueGray-700 hover:text-blueGray-500"
             >
               View All{" "}
-              <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+              <i className="ml-1 leading-relaxed fa fa-angle-double-right"></i>
             </a>
           </div>
-          <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
+          <div className="w-full px-4 mt-32 ml-auto mr-auto md:w-5/12">
             <div
               ref={divScrollRef}
-              className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0"
+              className="relative flex flex-col w-full min-w-0 mt-48 mb-6 md:mt-0"
             >
               <motion.img
                 style={{
@@ -304,7 +304,7 @@ const SecondSection = () => {
                 }}
                 alt="..."
                 src="/img/component-btn.png"
-                className="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
+                className="absolute w-full align-middle rounded shadow-lg max-w-100-px left-145-px -top-29-px z-3"
               />
               <motion.img
                 style={{
@@ -312,7 +312,7 @@ const SecondSection = () => {
                 }}
                 alt="..."
                 src="/img/component-profile-card.png"
-                className="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
+                className="absolute w-full align-middle rounded-lg shadow-lg max-w-210-px left-260-px -top-160-px"
               />
               <motion.img
                 style={{
@@ -320,7 +320,7 @@ const SecondSection = () => {
                 }}
                 alt="..."
                 src="/img/component-info-card.png"
-                className="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
+                className="absolute w-full align-middle rounded-lg shadow-lg max-w-180-px left-40-px -top-225-px z-2"
               />
               <motion.img
                 style={{
@@ -328,7 +328,7 @@ const SecondSection = () => {
                 }}
                 alt="..."
                 src="/img/component-info-2.png"
-                className="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
+                className="absolute w-full align-middle rounded-lg shadow-2xl max-w-200-px -left-50-px top-25-px"
               />
               <motion.img
                 style={{
@@ -336,7 +336,7 @@ const SecondSection = () => {
                 }}
                 alt="..."
                 src="/img/component-menu.png"
-                className="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
+                className="absolute w-full align-middle rounded shadow-lg max-w-580-px -left-20-px top-210-px"
               />
               <motion.img
                 style={{
@@ -344,7 +344,7 @@ const SecondSection = () => {
                 }}
                 alt="..."
                 src="/img/component-btn-pink.png"
-                className="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
+                className="absolute w-full align-middle rounded shadow-xl max-w-120-px left-195-px top-95-px"
               />
             </div>
           </div>
@@ -357,20 +357,20 @@ const SecondSection = () => {
           viewport={{ once: true }}
           className="relative flex flex-wrap items-center pt-32"
         >
-          <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
-            <div className="justify-center flex flex-wrap relative">
-              <div className="my-4 w-full lg:w-6/12 px-4">
+          <div className="w-full px-4 mt-32 ml-auto mr-auto md:w-6/12">
+            <div className="relative flex flex-wrap justify-center">
+              <div className="w-full px-4 my-4 lg:w-6/12">
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vtw-index"
                   target="_blank"
                 >
-                  <div className="bg-red-600 shadow-lg rounded-lg text-center p-8">
+                  <div className="p-8 text-center transition-colors bg-red-600 rounded-lg shadow-lg hover:bg-red-500 group">
                     <img
                       alt="..."
-                      className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
+                      className="w-16 max-w-full p-2 mx-auto transition-transform duration-300 bg-white rounded-full shadow-md group-hover:scale-110"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
                     />
-                    <p className="text-lg text-white mt-4 font-semibold">
+                    <p className="mt-4 text-lg font-semibold text-white">
                       Svelte
                     </p>
                   </div>
@@ -379,13 +379,13 @@ const SecondSection = () => {
                   href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=vtw-index"
                   target="_blank"
                 >
-                  <div className="bg-lightBlue-500 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div className="p-8 mt-8 text-center transition-colors rounded-lg shadow-lg bg-lightBlue-500 hover:bg-lightBlue-400 group">
                     <img
                       alt="..."
-                      className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
+                      className="w-16 max-w-full p-2 mx-auto transition-transform duration-300 bg-white rounded-full shadow-md group-hover:scale-110"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react.jpg"
                     />
-                    <p className="text-lg text-white mt-4 font-semibold">
+                    <p className="mt-4 text-lg font-semibold text-white">
                       ReactJS
                     </p>
                   </div>
@@ -394,30 +394,30 @@ const SecondSection = () => {
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=vtw-index"
                   target="_blank"
                 >
-                  <div className="bg-blueGray-700 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div className="p-8 mt-8 text-center transition-colors rounded-lg shadow-lg bg-blueGray-700 hover:bg-blueGray-600 group">
                     <img
                       alt="..."
-                      className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
+                      className="w-16 max-w-full p-2 mx-auto transition-transform duration-300 bg-white rounded-full shadow-md group-hover:scale-110"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg"
                     />
-                    <p className="text-lg text-white mt-4 font-semibold">
+                    <p className="mt-4 text-lg font-semibold text-white">
                       NextJS
                     </p>
                   </div>
                 </a>
               </div>
-              <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+              <div className="w-full px-4 my-4 lg:w-6/12 lg:mt-16">
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vtw-index"
                   target="_blank"
                 >
-                  <div className="bg-yellow-500 shadow-lg rounded-lg text-center p-8">
+                  <div className="p-8 text-center transition-colors bg-yellow-500 rounded-lg shadow-lg hover:bg-yellow-400 group">
                     <img
                       alt="..."
-                      className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
+                      className="w-16 max-w-full p-2 mx-auto transition-transform duration-300 bg-white rounded-full shadow-md group-hover:scale-110"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
                     />
-                    <p className="text-lg text-white mt-4 font-semibold">
+                    <p className="mt-4 text-lg font-semibold text-white">
                       JavaScript
                     </p>
                   </div>
@@ -426,13 +426,13 @@ const SecondSection = () => {
                   href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/notus?ref=vtw-index"
                   target="_blank"
                 >
-                  <div className="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div className="p-8 mt-8 text-center transition-colors bg-red-700 rounded-lg shadow-lg hover:bg-red-600 group">
                     <img
                       alt="..."
-                      className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
+                      className="w-16 max-w-full p-2 mx-auto transition-transform duration-300 bg-white rounded-full shadow-md group-hover:scale-110"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
                     />
-                    <p className="text-lg text-white mt-4 font-semibold">
+                    <p className="mt-4 text-lg font-semibold text-white">
                       Angular
                     </p>
                   </div>
@@ -441,13 +441,13 @@ const SecondSection = () => {
                   href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vtw-index"
                   target="_blank"
                 >
-                  <div className="bg-emerald-500 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div className="p-8 mt-8 text-center transition-colors rounded-lg shadow-lg bg-emerald-500 hover:bg-emerald-400 group">
                     <img
                       alt="..."
-                      className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
+                      className="w-16 max-w-full p-2 mx-auto transition-transform duration-300 bg-white rounded-full shadow-md group-hover:scale-110"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue.jpg"
                     />
-                    <p className="text-lg text-white mt-4 font-semibold">
+                    <p className="mt-4 text-lg font-semibold text-white">
                       Vue.js
                     </p>
                   </div>
@@ -456,72 +456,72 @@ const SecondSection = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
-            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-              <i className="fas fa-drafting-compass text-xl"></i>
+          <div className="w-full px-12 mt-48 ml-auto mr-auto md:w-4/12 md:px-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center bg-white rounded-full shadow-lg text-blueGray-500">
+              <i className="text-xl fas fa-drafting-compass"></i>
             </div>
-            <h3 className="text-3xl mb-2 font-semibold leading-normal">
+            <h3 className="mb-2 text-3xl font-semibold leading-normal">
               Javascript Components
             </h3>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+            <p className="mt-4 mb-4 text-lg font-light leading-relaxed text-blueGray-600">
               In order to create a great User Experience some components require
               JavaScript. In this way you can manipulate the elements on the
               page and give more options to your users.
             </p>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+            <p className="mt-4 mb-4 text-lg font-light leading-relaxed text-blueGray-600">
               We created a set of Components that are dynamic and come to help
               you.
             </p>
             <div className="block pb-6">
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Alerts
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Dropdowns
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Menus
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Modals
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Navbars
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Popovers
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Tabs
               </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
+              <span className="inline-block px-2 py-1 mt-2 mr-2 text-xs font-semibold uppercase bg-white rounded-full text-blueGray-500 last:mr-0">
                 Tooltips
               </span>
             </div>
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
               target="_blank"
-              className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
+              className="font-bold transition-all duration-150 ease-linear text-blueGray-700 hover:text-blueGray-500"
             >
               View all{" "}
-              <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+              <i className="ml-1 leading-relaxed fa fa-angle-double-right"></i>
             </a>
           </div>
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-4 pb-32 pt-48">
+      <div className="container px-4 pt-48 pb-32 mx-auto">
         <motion.div
           variants={leftSwipe}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="relative items-center flex flex-wrap"
+          className="relative flex flex-wrap items-center"
         >
-          <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
+          <div className="w-full px-12 ml-auto md:w-5/12 md:px-4">
             <div className="md:pr-12">
-              <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                <i className="fas fa-file-alt text-xl"></i>
+              <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center bg-white rounded-full shadow-lg text-blueGray-500">
+                <i className="text-xl fas fa-file-alt"></i>
               </div>
               <h3 className="text-3xl font-semibold">Complex Documentation</h3>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
@@ -530,11 +530,11 @@ const SecondSection = () => {
                 programming language. You can change the text and images and
                 you're good to go.
               </p>
-              <ul className="list-none mt-6">
+              <ul className="mt-6 list-none">
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
+                      <span className="inline-block px-2 py-1 mr-3 text-xs font-semibold uppercase rounded-full text-blueGray-500 bg-blueGray-50">
                         <i className="fas fa-fingerprint"></i>
                       </span>
                     </div>
@@ -548,7 +548,7 @@ const SecondSection = () => {
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
+                      <span className="inline-block px-2 py-1 mr-3 text-xs font-semibold uppercase rounded-full text-blueGray-500 bg-blueGray-50">
                         <i className="fab fa-html5"></i>
                       </span>
                     </div>
@@ -562,7 +562,7 @@ const SecondSection = () => {
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
+                      <span className="inline-block px-2 py-1 mr-3 text-xs font-semibold uppercase rounded-full text-blueGray-500 bg-blueGray-50">
                         <i className="far fa-paper-plane"></i>
                       </span>
                     </div>
@@ -577,7 +577,7 @@ const SecondSection = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0">
+          <div className="w-full px-4 pt-24 mr-auto md:w-6/12 md:pt-0">
             <img
               alt="..."
               className="max-w-full rounded-lg shadow-xl"
@@ -591,10 +591,10 @@ const SecondSection = () => {
         </motion.div>
       </div>
 
-      <div className="justify-center text-center flex flex-wrap mt-24">
-        <div className="w-full md:w-6/12 px-12 md:px-4">
-          <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
-          <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
+      <div className="flex flex-wrap justify-center mt-24 text-center">
+        <div className="w-full px-12 md:w-6/12 md:px-4">
+          <h2 className="text-4xl font-semibold">Beautiful Example Pages</h2>
+          <p className="mt-4 mb-4 text-lg leading-relaxed text-blueGray-500">
             Notus NextJS is a completly new product built using our past
             experience in web templates. Take the examples we made for you and
             start playing with them.
@@ -627,10 +627,10 @@ const ThirdSection = () => {
   };
 
   return (
-    <section className="block relative z-1 bg-blueGray-600">
+    <section className="relative block z-1 bg-blueGray-600">
       <div className="container mx-auto">
-        <div className="justify-center flex flex-wrap">
-          <div className="w-full lg:w-12/12 px-4  -mt-24">
+        <div className="flex flex-wrap justify-center">
+          <div className="w-full px-4 -mt-24 lg:w-12/12">
             <motion.div
               variants={container}
               initial="hidden"
@@ -640,16 +640,16 @@ const ThirdSection = () => {
             >
               <motion.div
                 variants={item}
-                className="relative w-full lg:w-4/12 px-4"
+                className="relative w-full px-4 lg:w-4/12"
               >
-                <h5 className="text-xl font-semibold pb-4 text-center">
+                <h5 className="pb-4 text-xl font-semibold text-center">
                   Login Page
                 </h5>
                 <Link href="/auth/login">
-                  <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                  <div className="relative flex flex-col w-full min-w-0 mb-6 break-words transition-all duration-150 ease-linear bg-white rounded-lg shadow-lg hover:-mt-4">
                     <img
                       alt="..."
-                      className="align-middle border-none max-w-full h-auto rounded-lg"
+                      className="h-auto max-w-full align-middle border-none rounded-lg"
                       src="/img/login.jpg"
                     />
                   </div>
@@ -657,16 +657,16 @@ const ThirdSection = () => {
               </motion.div>
               <motion.div
                 variants={item}
-                className="relative w-full lg:w-4/12 px-4"
+                className="relative w-full px-4 lg:w-4/12"
               >
-                <h5 className="text-xl font-semibold pb-4 text-center">
+                <h5 className="pb-4 text-xl font-semibold text-center">
                   Profile Page
                 </h5>
                 <Link href="/profile">
-                  <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                  <div className="relative flex flex-col w-full min-w-0 mb-6 break-words transition-all duration-150 ease-linear bg-white rounded-lg shadow-lg hover:-mt-4">
                     <img
                       alt="..."
-                      className="align-middle border-none max-w-full h-auto rounded-lg"
+                      className="h-auto max-w-full align-middle border-none rounded-lg"
                       src="/img/profile.jpg"
                     />
                   </div>
@@ -674,16 +674,16 @@ const ThirdSection = () => {
               </motion.div>
               <motion.div
                 variants={item}
-                className="relative w-full lg:w-4/12 px-4"
+                className="relative w-full px-4 lg:w-4/12"
               >
-                <h5 className="text-xl font-semibold pb-4 text-center">
+                <h5 className="pb-4 text-xl font-semibold text-center">
                   Landing Page
                 </h5>
                 <Link href="/landing">
-                  <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                  <div className="relative flex flex-col w-full min-w-0 mb-6 break-words transition-all duration-150 ease-linear bg-white rounded-lg shadow-lg hover:-mt-4">
                     <img
                       alt="..."
-                      className="align-middle border-none max-w-full h-auto rounded-lg"
+                      className="h-auto max-w-full align-middle border-none rounded-lg"
                       src="/img/landing.jpg"
                     />
                   </div>
@@ -699,17 +699,17 @@ const ThirdSection = () => {
 
 const FourthSection = () => {
   return (
-    <section className="py-20 bg-blueGray-600 overflow-hidden">
-      <div className="container mx-auto pb-64">
+    <section className="py-20 overflow-hidden bg-blueGray-600">
+      <div className="container pb-64 mx-auto">
         <div className="flex flex-wrap justify-center">
-          <div className="w-full md:w-5/12 px-12 md:px-4 ml-auto mr-auto md:mt-64">
-            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-              <i className="fas fa-code-branch text-xl"></i>
+          <div className="w-full px-12 ml-auto mr-auto md:w-5/12 md:px-4 md:mt-64">
+            <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center bg-white rounded-full shadow-lg text-blueGray-500">
+              <i className="text-xl fas fa-code-branch"></i>
             </div>
-            <h3 className="text-3xl mb-2 font-semibold leading-normal text-white">
+            <h3 className="mb-2 text-3xl font-semibold leading-normal text-white">
               Open Source
             </h3>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-400">
+            <p className="mt-4 mb-4 text-lg font-light leading-relaxed text-blueGray-400">
               Since{" "}
               <a
                 href="https://tailwindcss.com/?ref=creative"
@@ -722,21 +722,21 @@ const FourthSection = () => {
               You can give this version a try to feel the design and also test
               the quality of the code!
             </p>
-            <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-400">
+            <p className="mt-0 mb-4 text-lg font-light leading-relaxed text-blueGray-400">
               Get it free on Github and please help us spread the news with a
               Star!
             </p>
             <a
               href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
               target="_blank"
-              className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
+              className="inline-block px-6 py-4 mt-4 mb-1 mr-1 text-sm font-bold text-white uppercase rounded shadow outline-none github-star focus:outline-none bg-blueGray-700 active:bg-blueGray-600 hover:shadow-lg"
             >
               Github Star
             </a>
           </div>
 
-          <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative">
-            <i className="fab fa-github text-blueGray-700 absolute text-55 -top-150-px -right-100 left-auto opacity-80"></i>
+          <div className="relative w-full px-4 mt-32 ml-auto mr-auto md:w-4/12">
+            <i className="absolute left-auto fab fa-github text-blueGray-700 text-55 -top-150-px -right-100 opacity-80"></i>
           </div>
         </div>
       </div>
@@ -746,9 +746,9 @@ const FourthSection = () => {
 
 const FifthSection = () => {
   return (
-    <section className="pb-16 bg-blueGray-200 relative pt-32">
+    <section className="relative pt-32 pb-16 bg-blueGray-200">
       <div
-        className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
+        className="absolute top-0 left-0 right-0 bottom-auto w-full h-20 -mt-20"
         style={{ transform: "translateZ(0)" }}
       >
         <svg
@@ -761,46 +761,46 @@ const FifthSection = () => {
           y="0"
         >
           <polygon
-            className="text-blueGray-200 fill-current"
+            className="fill-current text-blueGray-200"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
       </div>
 
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center bg-white shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10">
+        <div className="relative z-10 flex flex-wrap justify-center px-12 py-16 -mt-64 bg-white rounded-lg shadow-xl">
           <div className="w-full text-center lg:w-8/12">
             <p className="text-4xl text-center">
               <span role="img" aria-label="love">
                 😍
               </span>
             </p>
-            <h3 className="font-semibold text-3xl">
+            <h3 className="text-3xl font-semibold">
               Do you love this Starter Kit?
             </h3>
-            <p className="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-blueGray-500">
               Cause if you do, it can be yours now. Hit the buttons below to
               navigate to get the Free version for your next project. Build a
               new web app or give an old project a new look!
             </p>
-            <div className="sm:block flex flex-col mt-10">
+            <div className="flex flex-col mt-10 sm:block">
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index"
                 target="_blank"
-                className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                className="px-6 py-4 mb-2 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none get-started focus:outline-none bg-blueGray-400 active:bg-blueGray-500 hover:shadow-lg"
               >
                 Get started
               </a>
               <a
                 href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
                 target="_blank"
-                className="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
+                className="px-6 py-4 mb-1 mr-1 text-sm font-bold text-white uppercase rounded shadow outline-none github-star sm:ml-1 focus:outline-none bg-blueGray-700 active:bg-blueGray-600 hover:shadow-lg"
               >
-                <i className="fab fa-github text-lg mr-1"></i>
+                <i className="mr-1 text-lg fab fa-github"></i>
                 <span>Help With a Star</span>
               </a>
             </div>
-            <div className="text-center mt-16"></div>
+            <div className="mt-16 text-center"></div>
           </div>
         </div>
       </div>
