@@ -47,7 +47,7 @@ const App: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
         <meta name="theme-color" content="#1e293b" />
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="viewport"
