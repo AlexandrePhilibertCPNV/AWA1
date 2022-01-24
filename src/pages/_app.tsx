@@ -40,12 +40,20 @@ const App: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <meta name="theme-color" content="#1e293b" />
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
+        <link rel="manifest" href="/manifest.json" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Notus NextJS by Creative Tim</title>
+        <title>Notus AWA1</title>
       </Head>
       <Layout>{<Component {...pageProps} />}</Layout>
     </>
