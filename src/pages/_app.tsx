@@ -40,6 +40,7 @@ const App: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
   return (
     <>
       <Head>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

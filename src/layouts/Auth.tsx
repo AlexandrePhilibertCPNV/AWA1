@@ -1,5 +1,4 @@
 import React, { PropsWithChildren, useEffect } from "react";
-import Head from "next/head";
 
 // components
 
@@ -117,9 +116,6 @@ export default function Auth({ children }: PropsWithChildren<{}>) {
 
   return (
     <>
-      <Head>
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
-      </Head>
       <Navbar />
       <main>
         <section className="relative w-full h-full min-h-screen py-40">
