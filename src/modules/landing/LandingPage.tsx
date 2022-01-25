@@ -141,7 +141,7 @@ const SecondSection = () => {
               variants={item}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.5 }}
               className="relative flex flex-col w-full min-w-0 mb-6 break-words rounded-lg shadow-lg bg-blueGray-700"
             >
               <img
@@ -179,7 +179,7 @@ const SecondSection = () => {
                 variants={item}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="relative flex flex-col w-1/2"
               >
                 <div className="flex-auto px-4 py-5">
@@ -197,7 +197,7 @@ const SecondSection = () => {
                 variants={item}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="relative flex flex-col w-1/2"
               >
                 <div className="flex-auto px-4 py-5">
@@ -217,7 +217,7 @@ const SecondSection = () => {
                 variants={item}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="relative flex flex-col w-1/2"
               >
                 <div className="flex-auto px-4 py-5">
@@ -235,7 +235,7 @@ const SecondSection = () => {
                 variants={item}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="relative flex flex-col w-1/2"
               >
                 <div className="flex-auto px-4 py-5">
@@ -259,7 +259,7 @@ const SecondSection = () => {
           variants={leftSwipe}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="relative flex flex-wrap items-center"
         >
           <div className="w-full px-12 mt-48 ml-auto mr-auto md:w-4/12 md:px-4">
@@ -354,7 +354,7 @@ const SecondSection = () => {
           variants={rightSwipe}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="relative flex flex-wrap items-center pt-32"
         >
           <div className="w-full px-4 mt-32 ml-auto mr-auto md:w-6/12">
@@ -515,7 +515,7 @@ const SecondSection = () => {
           variants={leftSwipe}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="relative flex flex-wrap items-center"
         >
           <div className="w-full px-12 ml-auto md:w-5/12 md:px-4">
@@ -635,7 +635,7 @@ const ThirdSection = () => {
               variants={container}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.5 }}
               className="flex flex-wrap"
             >
               <motion.div
