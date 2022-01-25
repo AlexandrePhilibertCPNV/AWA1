@@ -4,6 +4,8 @@ Ce projet a pour but d'apprendre à intégrer des librairies et outils existants
 
 Template de départ pour le projet : https://www.creative-tim.com/product/notus-nextjs
 
+Le site est déployé sur Netlify à l'adresse : https://boring-davinci-9df57f.netlify.app/
+
 ## Librairies et Outils
 
 - [Framer Motion](https://www.framer.com/motion/)
@@ -24,6 +26,7 @@ La liste complète des librairies peut être retrouvée dans le `package.json`
 - Migration du template de Javascript à Typescript
 - Animations sur la page d'accueil (stagger, translate on-show, etc) avec Framer Motion
 - Animations CSS sur changement d'état des éléments (hover par ex.)
+- Déployment automatique sur Netlify
 
 ## Exemple de code
 
