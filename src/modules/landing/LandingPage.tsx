@@ -640,7 +640,7 @@ const ThirdSection = () => {
             >
               <motion.div
                 variants={item}
-                className="relative w-full px-4 lg:w-4/12"
+                className="relative w-full px-4 cursor-pointer lg:w-4/12"
               >
                 <h5 className="pb-4 text-xl font-semibold text-center">
                   Login Page
@@ -657,7 +657,7 @@ const ThirdSection = () => {
               </motion.div>
               <motion.div
                 variants={item}
-                className="relative w-full px-4 lg:w-4/12"
+                className="relative w-full px-4 cursor-pointer lg:w-4/12"
               >
                 <h5 className="pb-4 text-xl font-semibold text-center">
                   Profile Page
@@ -674,7 +674,7 @@ const ThirdSection = () => {
               </motion.div>
               <motion.div
                 variants={item}
-                className="relative w-full px-4 lg:w-4/12"
+                className="relative w-full px-4 cursor-pointer lg:w-4/12"
               >
                 <h5 className="pb-4 text-xl font-semibold text-center">
                   Landing Page
