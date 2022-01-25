@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 // components
@@ -5,15 +6,44 @@ import React from "react";
 import CardStats from "src/components/Cards/CardStats";
 
 export default function HeaderStats() {
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0,
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      top: -50,
+    },
+    visible: {
+      opacity: 1,
+      top: 0,
+    },
+  };
+
   return (
     <>
       {/* Header */}
-      <div className="relative bg-blueGray-800 md:pt-32 pb-32 pt-12">
-        <div className="px-4 md:px-10 mx-auto w-full">
+      <div className="relative pt-12 pb-32 bg-blueGray-800 md:pt-32">
+        <div className="w-full px-4 mx-auto md:px-10">
           <div>
             {/* Card stats */}
-            <div className="flex flex-wrap">
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="flex flex-wrap"
+            >
+              <motion.div
+                variants={item}
+                className="relative w-full px-4 lg:w-6/12 xl:w-3/12"
+              >
                 <CardStats
                   statSubtitle="TRAFFIC"
                   value={350_897}
@@ -24,8 +54,11 @@ export default function HeaderStats() {
                   statIconName="far fa-chart-bar"
                   statIconColor="bg-red-500"
                 />
-              </div>
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
+              </motion.div>
+              <motion.div
+                variants={item}
+                className="relative w-full px-4 lg:w-6/12 xl:w-3/12"
+              >
                 <CardStats
                   statSubtitle="NEW USERS"
                   value={2_356}
@@ -36,8 +69,11 @@ export default function HeaderStats() {
                   statIconName="fas fa-chart-pie"
                   statIconColor="bg-orange-500"
                 />
-              </div>
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
+              </motion.div>
+              <motion.div
+                variants={item}
+                className="relative w-full px-4 lg:w-6/12 xl:w-3/12"
+              >
                 <CardStats
                   statSubtitle="SALES"
                   value={924}
@@ -48,8 +84,11 @@ export default function HeaderStats() {
                   statIconName="fas fa-users"
                   statIconColor="bg-pink-500"
                 />
-              </div>
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
+              </motion.div>
+              <motion.div
+                variants={item}
+                className="relative w-full px-4 lg:w-6/12 xl:w-3/12"
+              >
                 <CardStats
                   statSubtitle="PERFORMANCE"
                   value={49.65}
@@ -60,8 +99,8 @@ export default function HeaderStats() {
                   statIconName="fas fa-percent"
                   statIconColor="bg-lightBlue-500"
                 />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>
