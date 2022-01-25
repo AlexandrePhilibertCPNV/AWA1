@@ -63,6 +63,7 @@ const SecondSection = () => {
   const divScrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useViewportScroll();
   const { start, end } = useRefScrollProgress(divScrollRef);
+  // This is used to animate the size of images based on the scroll progress
   const scale = useTransform(
     scrollYProgress,
     [start - 0.2, end - 0.05],

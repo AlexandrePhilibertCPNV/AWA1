@@ -9,6 +9,8 @@ type MapProps = {
 };
 
 export const Map = ({ onLocationClick }: MapProps) => {
+  // Track the selected state in order to manually set which state is selected
+  // on the map. This allows us to apply a custom style to the selected state.
   const [selectedLocation, setSelectedLocation] = useState(null);
 
   function handleLocationClick(location: any) {

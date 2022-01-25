@@ -12,15 +12,19 @@ import { motion, useAnimation } from "framer-motion";
 const MapPage = () => {
   const [selectedState, setSelectedState] = useState<string>();
   const { data: stats } = useStateStats(selectedState);
+  // Manually control the framer-motion animation as we are triggering it when
+  // the user click on the map and the selected state changes.
   const controls = useAnimation();
 
   useEffect(() => {
+    // Trigger the animation on mount
     controls.start({ right: [-100, 0], opacity: [0, 1] });
   }, [controls]);
 
   function handleLocationClick(location: any) {
     setSelectedState(location.target.id);
 
+    // Trigger the animation on click
     controls.start({ right: [-100, 0], opacity: [0, 1] });
   }
 
