@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Map } from "./Map";
 import USA from "../../assets/usa";
@@ -7,13 +7,21 @@ import Admin from "src/layouts/Admin";
 import { SalesDonutChart } from "./SalesDonutChart";
 import { SalesBarChart } from "./SalesBarChart";
 import { useStateStats } from "./useStateStats";
+import { motion, useAnimation } from "framer-motion";
 
 const MapPage = () => {
   const [selectedState, setSelectedState] = useState<string>();
   const { data: stats } = useStateStats(selectedState);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ right: [-100, 0], opacity: [0, 1] });
+  }, [controls]);
 
   function handleLocationClick(location: any) {
     setSelectedState(location.target.id);
+
+    controls.start({ right: [-100, 0], opacity: [0, 1] });
   }
 
   const selectedStateName = USA.locations.find(
@@ -22,12 +30,20 @@ const MapPage = () => {
 
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap overflow-x-hidden">
         <div className="flex w-full px-4 space-x-4">
-          <div className="relative flex w-full min-w-0 p-6 mb-6 break-words bg-white rounded shadow-lg">
+          <motion.div
+            animate={{ left: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="relative flex w-full min-w-0 p-6 mb-6 break-words bg-white rounded shadow-lg"
+          >
             <Map onLocationClick={handleLocationClick} />
-          </div>
-          <div className="relative flex flex-col flex-1 flex-shrink-0 p-6 mb-6 break-words bg-white rounded shadow-lg min-w-min">
+          </motion.div>
+          <motion.div
+            animate={controls}
+            transition={{ duration: 0.5 }}
+            className="relative flex flex-col flex-1 flex-shrink-0 p-6 mb-6 break-words bg-white rounded shadow-lg min-w-min"
+          >
             <h1 className="text-xl font-semibold">
               Sales {selectedStateName ?? "Total"}
             </h1>
@@ -65,7 +81,7 @@ const MapPage = () => {
                 },
               ]}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
