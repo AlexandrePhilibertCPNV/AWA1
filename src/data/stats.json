@@ -1,52 +1,600 @@
 [
-  { "id": "ak", "data": { "target": [76, 24] } },
-  { "id": "ar", "data": { "target": [24, 76] } },
-  { "id": "az", "data": { "target": [75, 23] } },
-  { "id": "ca", "data": { "target": [63, 37] } },
-  { "id": "co", "data": { "target": [17, 83] } },
-  { "id": "ct", "data": { "target": [47, 53] } },
-  { "id": "dc", "data": { "target": [84, 16] } },
-  { "id": "de", "data": { "target": [84, 16] } },
-  { "id": "fl", "data": { "target": [35, 65] } },
-  { "id": "ga", "data": { "target": [42, 58] } },
-  { "id": "hi", "data": { "target": [63, 37] } },
-  { "id": "ia", "data": { "target": [91, 9] } },
-  { "id": "id", "data": { "target": [57, 43] } },
-  { "id": "il", "data": { "target": [27, 73] } },
-  { "id": "in", "data": { "target": [76, 24] } },
-  { "id": "ks", "data": { "target": [86, 14] } },
-  { "id": "ky", "data": { "target": [57, 43] } },
-  { "id": "la", "data": { "target": [48, 52] } },
-  { "id": "ma", "data": { "target": [50, 50] } },
-  { "id": "md", "data": { "target": [25, 75] } },
-  { "id": "me", "data": { "target": [23, 77] } },
-  { "id": "mi", "data": { "target": [86, 14] } },
-  { "id": "mn", "data": { "target": [25, 75] } },
-  { "id": "mo", "data": { "target": [57, 43] } },
-  { "id": "ms", "data": { "target": [27, 73] } },
-  { "id": "mt", "data": { "target": [76, 24] } },
-  { "id": "nc", "data": { "target": [86, 14] } },
-  { "id": "nd", "data": { "target": [57, 43] } },
-  { "id": "ne", "data": { "target": [48, 52] } },
-  { "id": "nh", "data": { "target": [50, 50] } },
-  { "id": "nj", "data": { "target": [25, 75] } },
-  { "id": "nm", "data": { "target": [23, 77] } },
-  { "id": "nv", "data": { "target": [86, 14] } },
-  { "id": "ny", "data": { "target": [57, 43] } },
-  { "id": "oh", "data": { "target": [27, 73] } },
-  { "id": "ok", "data": { "target": [76, 24] } },
-  { "id": "or", "data": { "target": [86, 14] } },
-  { "id": "pa", "data": { "target": [57, 43] } },
-  { "id": "ri", "data": { "target": [48, 52] } },
-  { "id": "sc", "data": { "target": [50, 50] } },
-  { "id": "sd", "data": { "target": [25, 75] } },
-  { "id": "tn", "data": { "target": [23, 77] } },
-  { "id": "tx", "data": { "target": [86, 14] } },
-  { "id": "ut", "data": { "target": [76, 24] } },
-  { "id": "va", "data": { "target": [23, 77] } },
-  { "id": "vt", "data": { "target": [63, 37] } },
-  { "id": "wa", "data": { "target": [17, 83] } },
-  { "id": "wi", "data": { "target": [47, 53] } },
-  { "id": "wv", "data": { "target": [84, 16] } },
-  { "id": "wy", "data": { "target": [84, 16] } }
+  {
+    "id": "ak",
+    "data": {
+      "target": [76, 24],
+      "cities": [
+        { "name": "Anchorage", "value": 75 },
+        { "name": "Juneau", "value": 42 },
+        { "name": "Fairbanks", "value": 78 },
+        { "name": "Wasilla", "value": 12 }
+      ]
+    }
+  },
+  {
+    "id": "ar",
+    "data": {
+      "target": [24, 76],
+      "cities": [
+        { "name": "Litte Rock", "value": 87 },
+        { "name": "Fort Smith", "value": 65 },
+        { "name": "Fayetteville", "value": 72 },
+        { "name": "Springdale", "value": 56 }
+      ]
+    }
+  },
+  {
+    "id": "az",
+    "data": {
+      "target": [75, 23],
+      "cities": [
+        { "name": "Phoenix", "value": 88 },
+        { "name": "Tucson", "value": 100 },
+        { "name": "Mesa", "value": 84 },
+        { "name": "Chandler", "value": 52 }
+      ]
+    }
+  },
+  {
+    "id": "ca",
+    "data": {
+      "target": [63, 37],
+      "cities": [
+        { "name": "Los Angeles", "value": 42 },
+        { "name": "San Diego", "value": 35 },
+        { "name": "San Jose", "value": 42 },
+        { "name": "San Fransisco", "value": 56 }
+      ]
+    }
+  },
+  {
+    "id": "co",
+    "data": {
+      "target": [17, 83],
+      "cities": [
+        { "name": "Denver", "value": 89 },
+        { "name": "Colorado Springs", "value": 56 },
+        { "name": "Aurora", "value": 10 },
+        { "name": "Fort Collins", "value": 52 }
+      ]
+    }
+  },
+  {
+    "id": "ct",
+    "data": {
+      "target": [47, 53],
+      "cities": [
+        { "name": "Bridgeport", "value": 85 },
+        { "name": "Stamford", "value": 71 },
+        { "name": "New Haveon", "value": 54 },
+        { "name": "Hartford", "value": 62 }
+      ]
+    }
+  },
+  {
+    "id": "dc",
+    "data": {
+      "target": [84, 16],
+      "cities": [
+        { "name": "Washington D.C (1)", "value": 75 },
+        { "name": "Washington D.C (2)", "value": 73 }
+      ]
+    }
+  },
+  {
+    "id": "de",
+    "data": {
+      "target": [84, 16],
+      "cities": [
+        { "name": "Wilmington", "value": 35 },
+        { "name": "Dover", "value": 56 },
+        { "name": "Newark", "value": 57 },
+        { "name": "Middletown", "value": 82 }
+      ]
+    }
+  },
+  {
+    "id": "fl",
+    "data": {
+      "target": [35, 65],
+      "cities": [
+        { "name": "Jacksonville", "value": 82 },
+        { "name": "Miami", "value": 65 },
+        { "name": "Tampa", "value": 42 },
+        { "name": "Orlando", "value": 56 }
+      ]
+    }
+  },
+  {
+    "id": "ga",
+    "data": {
+      "target": [42, 58],
+      "cities": [
+        { "name": "Atlanta", "value": 72 },
+        { "name": "Augusta", "value": 85 },
+        { "name": "Columbus", "value": 58 },
+        { "name": "Macon", "value": 85 }
+      ]
+    }
+  },
+  {
+    "id": "hi",
+    "data": {
+      "target": [63, 37],
+      "cities": [
+        { "name": "Honolulu", "value": 64 },
+        { "name": "East Honolulu", "value": 25 },
+        { "name": "Pearl City", "value": 71 },
+        { "name": "Hilo", "value": 88 }
+      ]
+    }
+  },
+  {
+    "id": "ia",
+    "data": {
+      "target": [91, 9],
+      "cities": [
+        { "name": "Des Moines", "value": 74 },
+        { "name": "Cedar Rapids", "value": 25 },
+        { "name": "Davenport", "value": 34 },
+        { "name": "Iowa City", "value": 54 }
+      ]
+    }
+  },
+  {
+    "id": "id",
+    "data": {
+      "target": [57, 43],
+      "cities": [
+        { "name": "Boise", "value": 54 },
+        { "name": "Meridian", "value": 10 },
+        { "name": "Nampa", "value": 65 },
+        { "name": "Idaho Falls", "value": 88 }
+      ]
+    }
+  },
+  {
+    "id": "il",
+    "data": {
+      "target": [27, 73],
+      "cities": [
+        { "name": "Chicago", "value": 77 },
+        { "name": "Aurora", "value": 45 },
+        { "name": "Naperville", "value": 23 },
+        { "name": "Joliet", "value": 78 }
+      ]
+    }
+  },
+  {
+    "id": "in",
+    "data": {
+      "target": [76, 24],
+      "cities": [
+        { "name": "Indianapolis", "value": 45 },
+        { "name": "Fort Wayne", "value": 68 },
+        { "name": "Evansville", "value": 45 },
+        { "name": "Joliet", "value": 43 }
+      ]
+    }
+  },
+  {
+    "id": "ks",
+    "data": {
+      "target": [86, 14],
+      "cities": [
+        { "name": "Wichita", "value": 73 },
+        { "name": "Overland Park", "value": 16 },
+        { "name": "Kansas City", "value": 91 },
+        { "name": "Olathe", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "ky",
+    "data": {
+      "target": [57, 43],
+      "cities": [
+        { "name": "Louisville", "value": 14 },
+        { "name": "Lexington", "value": 46 },
+        { "name": "Bowling Green", "value": 54 },
+        { "name": "Owensboro", "value": 82 }
+      ]
+    }
+  },
+  {
+    "id": "la",
+    "data": {
+      "target": [48, 52],
+      "cities": [
+        { "name": "New Orleans", "value": 78 },
+        { "name": "Baton Rouge", "value": 63 },
+        { "name": "Shreveport", "value": 54 },
+        { "name": "Lafayette", "value": 89 }
+      ]
+    }
+  },
+  {
+    "id": "ma",
+    "data": {
+      "target": [5, 5],
+      "cities": [
+        { "name": "Boston", "value": 86 },
+        { "name": "Worcester", "value": 10 },
+        { "name": "Springfield", "value": 56 },
+        { "name": "Cambridge", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "md",
+    "data": {
+      "target": [25, 75],
+      "cities": [
+        { "name": "Baltimore", "value": 80 },
+        { "name": "Columbia", "value": 53 },
+        { "name": "Germantown", "value": 64 },
+        { "name": "Silver Spring", "value": 88 }
+      ]
+    }
+  },
+  {
+    "id": "me",
+    "data": {
+      "target": [23, 77],
+      "cities": [
+        { "name": "Portland", "value": 45 },
+        { "name": "Lewiston", "value": 65 },
+        { "name": "Bangor", "value": 45 },
+        { "name": "Auburn", "value": 78 }
+      ]
+    }
+  },
+  {
+    "id": "mi",
+    "data": {
+      "target": [86, 14],
+      "cities": [
+        { "name": "Detroit", "value": 85 },
+        { "name": "Grand Rapids", "value": 64 },
+        { "name": "Warren", "value": 46 },
+        { "name": "Sterling Heights", "value": 88 }
+      ]
+    }
+  },
+  {
+    "id": "mn",
+    "data": {
+      "target": [25, 75],
+      "cities": [
+        { "name": "Minneapolis", "value": 76 },
+        { "name": "Saint Paul", "value": 20 },
+        { "name": "Rochester", "value": 46 },
+        { "name": "Duluth", "value": 68 }
+      ]
+    }
+  },
+  {
+    "id": "mo",
+    "data": {
+      "target": [57, 43],
+      "cities": [
+        { "name": "Kansas City", "value": 40 },
+        { "name": "Saint Louis", "value": 65 },
+        { "name": "Springfield", "value": 73 },
+        { "name": "Columbia", "value": 45 }
+      ]
+    }
+  },
+  {
+    "id": "ms",
+    "data": {
+      "target": [27, 73],
+      "cities": [
+        { "name": "Jackson", "value": 20 },
+        { "name": "Gulfport", "value": 75 },
+        { "name": "Southhaven", "value": 80 },
+        { "name": "Biloxi", "value": 64 }
+      ]
+    }
+  },
+  {
+    "id": "mt",
+    "data": {
+      "target": [76, 24],
+      "cities": [
+        { "name": "Billings", "value": 73 },
+        { "name": "Missoula", "value": 66 },
+        { "name": "Great Falls", "value": 46 },
+        { "name": "Bozeman", "value": 45 }
+      ]
+    }
+  },
+  {
+    "id": "nc",
+    "data": {
+      "target": [86, 14],
+      "cities": [
+        { "name": "Charlotte", "value": 67 },
+        { "name": "Raleigh", "value": 45 },
+        { "name": "Greensboro", "value": 64 },
+        { "name": "Durham", "value": 64 }
+      ]
+    }
+  },
+  {
+    "id": "nd",
+    "data": {
+      "target": [57, 43],
+      "cities": [
+        { "name": "Fargo", "value": 83 },
+        { "name": "Bismarck", "value": 45 },
+        { "name": "Grand Forks", "value": 34 },
+        { "name": "Minot", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "ne",
+    "data": {
+      "target": [48, 52],
+      "cities": [
+        { "name": "Omaha", "value": 45 },
+        { "name": "Lincoln", "value": 64 },
+        { "name": "Bellevue", "value": 80 },
+        { "name": "Grand Island", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "nh",
+    "data": {
+      "target": [5, 5],
+      "cities": [
+        { "name": "Manchester", "value": 45 },
+        { "name": "Nashua", "value": 82 },
+        { "name": "Concord", "value": 37 },
+        { "name": "Dover", "value": 64 }
+      ]
+    }
+  },
+  {
+    "id": "nj",
+    "data": {
+      "target": [25, 75],
+      "cities": [
+        { "name": "Newark", "value": 46 },
+        { "name": "Jersey City", "value": 82 },
+        { "name": "Paterson", "value": 46 },
+        { "name": "Elizabeth", "value": 20 }
+      ]
+    }
+  },
+  {
+    "id": "nm",
+    "data": {
+      "target": [23, 77],
+      "cities": [
+        { "name": "Albuquerque", "value": 46 },
+        { "name": "Las Cruces", "value": 45 },
+        { "name": "Rio Rancho", "value": 16 },
+        { "name": "Santa Fee", "value": 68 }
+      ]
+    }
+  },
+  {
+    "id": "nv",
+    "data": {
+      "target": [86, 14],
+      "cities": [
+        { "name": "Las Vegas", "value": 45 },
+        { "name": "Henderson", "value": 71 },
+        { "name": "Reno", "value": 45 },
+        { "name": "Paradise", "value": 72 }
+      ]
+    }
+  },
+  {
+    "id": "ny",
+    "data": {
+      "target": [57, 43],
+      "cities": [
+        { "name": "New York City", "value": 5 },
+        { "name": "Buffalo", "value": 45 },
+        { "name": "Rochester", "value": 73 },
+        { "name": "Yonkers", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "oh",
+    "data": {
+      "target": [27, 73],
+      "cities": [
+        { "name": "Colombus", "value": 76 },
+        { "name": "Cleveland", "value": 45 },
+        { "name": "Cincinnati", "value": 46 },
+        { "name": "Toledo", "value": 67 }
+      ]
+    }
+  },
+  {
+    "id": "ok",
+    "data": {
+      "target": [76, 24],
+      "cities": [
+        { "name": "Oklahoma City", "value": 52 },
+        { "name": "Tulsa", "value": 20 },
+        { "name": "Norman", "value": 64 },
+        { "name": "Borken Arrow", "value": 49 }
+      ]
+    }
+  },
+  {
+    "id": "or",
+    "data": {
+      "target": [86, 14],
+      "cities": [
+        { "name": "Portland", "value": 75 },
+        { "name": "Salem", "value": 24 },
+        { "name": "Eugene", "value": 43 },
+        { "name": "Gresham", "value": 67 }
+      ]
+    }
+  },
+  {
+    "id": "pa",
+    "data": {
+      "target": [57, 43],
+      "cities": [
+        { "name": "Philadelphia", "value": 53 },
+        { "name": "Pittsburg", "value": 45 },
+        { "name": "Allentown", "value": 67 },
+        { "name": "Erie", "value": 60 }
+      ]
+    }
+  },
+  {
+    "id": "ri",
+    "data": {
+      "target": [48, 52],
+      "cities": [
+        { "name": "Providence", "value": 30 },
+        { "name": "Cranston", "value": 70 },
+        { "name": "Warwick", "value": 88 },
+        { "name": "Pawtucket", "value": 35 }
+      ]
+    }
+  },
+  {
+    "id": "sc",
+    "data": {
+      "target": [5, 5],
+      "cities": [
+        { "name": "Charleston", "value": 42 },
+        { "name": "Columbia", "value": 34 },
+        { "name": "North Charleston", "value": 82 },
+        { "name": "Mount Pleasant", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "sd",
+    "data": {
+      "target": [25, 75],
+      "cities": [
+        { "name": "Sioux Falls", "value": 45 },
+        { "name": "Rapid City", "value": 46 },
+        { "name": "Aberdeen", "value": 78 },
+        { "name": "Brookings", "value": 80 }
+      ]
+    }
+  },
+  {
+    "id": "tn",
+    "data": {
+      "target": [23, 77],
+      "cities": [
+        { "name": "Nashville", "value": 50 },
+        { "name": "Memphis", "value": 76 },
+        { "name": "Knoxville", "value": 64 },
+        { "name": "Chattanooga", "value": 75 }
+      ]
+    }
+  },
+  {
+    "id": "tx",
+    "data": {
+      "target": [86, 14],
+      "cities": [
+        { "name": "Houston", "value": 75 },
+        { "name": "San Antonio", "value": 67 },
+        { "name": "Dallas", "value": 24 },
+        { "name": "Austin", "value": 63 }
+      ]
+    }
+  },
+  {
+    "id": "ut",
+    "data": {
+      "target": [76, 24],
+      "cities": [
+        { "name": "Salt Lake City", "value": 76 },
+        { "name": "West Valley City", "value": 24 },
+        { "name": "Provo", "value": 76 },
+        { "name": "West Jordan", "value": 40 }
+      ]
+    }
+  },
+  {
+    "id": "va",
+    "data": {
+      "target": [23, 77],
+      "cities": [
+        { "name": "Virginia Beach", "value": 73 },
+        { "name": "Norfolk", "value": 54 },
+        { "name": "Chesapeake", "value": 45 },
+        { "name": "Richmond", "value": 49 }
+      ]
+    }
+  },
+  {
+    "id": "vt",
+    "data": {
+      "target": [63, 37],
+      "cities": [
+        { "name": "Burlington", "value": 49 },
+        { "name": "South Burlington", "value": 50 },
+        { "name": "Rutland", "value": 76 },
+        { "name": "Barre", "value": 76 }
+      ]
+    }
+  },
+  {
+    "id": "wa",
+    "data": {
+      "target": [17, 83],
+      "cities": [
+        { "name": "Seattle", "value": 74 },
+        { "name": "Spokane", "value": 16 },
+        { "name": "Tacoma", "value": 50 },
+        { "name": "Vancouver", "value": 64 }
+      ]
+    }
+  },
+  {
+    "id": "wi",
+    "data": {
+      "target": [47, 53],
+      "cities": [
+        { "name": "Milwaukee", "value": 76 },
+        { "name": "Madison", "value": 40 },
+        { "name": "Green Bay", "value": 36 },
+        { "name": "Kenosha", "value": 46 }
+      ]
+    }
+  },
+  {
+    "id": "wv",
+    "data": {
+      "target": [84, 16],
+      "cities": [
+        { "name": "Charleston", "value": 46 },
+        { "name": "Huntington", "value": 45 },
+        { "name": "Morgantown", "value": 37 },
+        { "name": "Parkersburg", "value": 94 }
+      ]
+    }
+  },
+  {
+    "id": "wy",
+    "data": {
+      "target": [84, 16],
+      "cities": [
+        { "name": "Cheyenne", "value": 97 },
+        { "name": "Casper", "value": 46 },
+        { "name": "Laramie", "value": 64 },
+        { "name": "Gillette", "value": 94 }
+      ]
+    }
+  }
 ]
