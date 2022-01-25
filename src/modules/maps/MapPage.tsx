@@ -5,6 +5,7 @@ import USA from "../../assets/usa";
 
 import Admin from "src/layouts/Admin";
 import { SalesDonutChart } from "./SalesDonutChart";
+import { SalesBarChart } from "./SalesBarChart";
 
 const MapPage = () => {
   const [selectedState, setSelectedState] = useState<string>();
@@ -69,20 +70,23 @@ const MapPage = () => {
     setSelectedState(location.target.id);
   }
 
+  const selectedStateName = USA.locations.find(
+    (state) => state.id === selectedState
+  )?.name;
+
   return (
     <>
       <div className="flex flex-wrap">
         <div className="flex w-full px-4 space-x-4">
-          <div className="relative flex min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded p-6">
+          <div className="relative flex w-full min-w-0 p-6 mb-6 break-words bg-white rounded shadow-lg">
             <Map onLocationClick={handleLocationClick} />
           </div>
-          <div className="relative flex flex-col flex-1 min-w-min flex-shrink-0 break-words bg-white mb-6 shadow-lg rounded p-6">
+          <div className="relative flex flex-col flex-1 flex-shrink-0 p-6 mb-6 break-words bg-white rounded shadow-lg min-w-min">
             <h1 className="text-xl font-semibold">
-              Sales{" "}
-              {USA.locations.find((state) => state.id === selectedState)
-                ?.name ?? "Total"}
+              Sales {selectedStateName ?? "Total"}
             </h1>
-            <hr className="border border-gray-200 mt-4 mb-8" />
+            <hr className="mt-4 border-t border-gray-200" />
+            <h2 className="my-6 font-bold text-center">Target Sales %</h2>
             <SalesDonutChart
               labels={["Done", "Remaining"]}
               datasets={[
@@ -93,6 +97,17 @@ const MapPage = () => {
                     ?.data ?? [67, 33],
                   fill: false,
                   barThickness: 8,
+                },
+              ]}
+            />
+            <h2 className="my-6 font-bold text-center">Breakdown by city</h2>
+            <SalesBarChart
+              labels={["Kansas City", "Saint Louis", "Springfield", "Columbia"]}
+              datasets={[
+                {
+                  label: "Sales",
+                  backgroundColor: "#ed64a6",
+                  data: [23, 67, 34, 45],
                 },
               ]}
             />

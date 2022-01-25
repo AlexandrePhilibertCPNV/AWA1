@@ -42,7 +42,7 @@ export const SalesDonutChart = ({ labels, datasets }: SalesDonutChartProps) => (
         labels: {
           fontColor: "rgba(0,0,0,.4)",
         },
-        align: "end",
+        align: "center",
         position: "bottom",
       },
       scales: {
