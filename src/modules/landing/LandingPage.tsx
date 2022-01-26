@@ -115,7 +115,7 @@ const SecondSection = () => {
   };
 
   return (
-    <section className="relative pb-40 mt-48 md:mt-40 bg-blueGray-100">
+    <section className="relative pb-40 mt-48 md:mt-40 bg-blueGray-100 overflow-x-hidden ">
       <div
         className="absolute top-0 left-0 right-0 bottom-auto w-full h-20 -mt-20"
         style={{ transform: "translateZ(0)" }}
