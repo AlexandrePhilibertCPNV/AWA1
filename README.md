@@ -17,6 +17,16 @@ Le site est déployé sur Netlify à l'adresse : https://boring-davinci-9df57f.n
 
 La liste complète des librairies peut être retrouvée dans le `package.json`
 
+## Technologies
+
+### NextJS
+
+NextJS est un framework autour de la librairie React qui permet de créer des sites web en utilisant une aporche de rendu hybride. Il est en effet possible avec NextJS de faire du rendu côté serveur, mais il est également possible de faire du rendu côté client ou de mélanger les deux. Ceci permet aux utilisateurs d'obtenir une meilleure expérience d'utilisation. Cela permet, par exemple, de faire un rendu côté serveur du layout de la page, puis de charger du contenu dynamique sur le client et d'animer le rendu à cet instant.
+
+### TailwindCSS
+
+TailwindCSS est un framework CSS "utility-first", il met à disposition des classes utilitaires, contrairement à d'autres outils qui vont proposer des classes orienté sur une approche "component". La version 3 de TailwindCSS est proposée avec un compliateur JIT, cela permet de ne pas avoir à définir quelles seront les classes utilisées dans le projet, c'est le compilateur qui va inspecter le code source et déterminer les classes à ajouter à la feuille de style.
+
 ## Fonctionnalités
 
 - Carte interactive avec affichage de statistiques
@@ -110,4 +120,3 @@ L'API permet de récupérer les statistiques de chaque État. Elle est accessibl
 - https://codepen.io/VincentGarreau/pen/pnlso
 - https://www.chartjs.org/
 - https://react-chartjs-2.netlify.app/
--
